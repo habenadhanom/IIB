@@ -1,0 +1,22 @@
+
+
+CREATE COMPUTE MODULE functionprocudderMF_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE i INTEGER 7;
+		DECLARE j INTEGER 15;
+		DECLARE sum INTEGER;
+		DECLARE Sis INTEGER;
+		--DECLARE student CHARACTER;
+		 set sum = SUM(i, j); 
+		set OutputRoot.XMLNSC.SUM = sum; 
+		RETURN TRUE;
+	END;
+
+	CREATE FUNCTION SUM(IN x INTEGER, IN y INTEGER) return integer
+	BEGIN
+		--DECLARE Sis INTEGER;
+	    SET Sis = x + y;
+		
+	END;
+END MODULE;

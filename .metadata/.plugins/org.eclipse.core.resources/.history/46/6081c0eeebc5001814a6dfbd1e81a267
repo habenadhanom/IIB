@@ -1,0 +1,19 @@
+
+
+CREATE COMPUTE MODULE functionprocudderMF_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		DECLARE firstName CHARACTER 'Haben';
+		DECLARE lastName CHARACTER 'Tesfatsion';
+		DECLARE department CHARACTER 'IIB';
+		 DECLARE student CHARACTER;
+		 set student = CONCAT(firstName, lastName, department); 
+		set OutputRoot.XMLNSC.candidate = student; 
+		RETURN TRUE;
+	END;
+
+	CREATE FUNCTION CONCAT(IN firstname CHARACTER, IN lastname CHARACTER, IN department CHARACTER) return CHARACTER
+	BEGIN
+		return firstname || ' ' ||lastname ||' ' || department; 
+	END;
+END MODULE;

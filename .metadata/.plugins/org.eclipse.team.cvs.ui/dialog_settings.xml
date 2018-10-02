@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SharingWizard">
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_USERNAME_ID">
+			<item value="haben"/>
+			<item value="habenatt"/>
+		</list>
+		<list key="ConfigurationWizardMainPage.STORE_PATH_ID">
+			<item value="C:\Users\haben\Documents\source\IIB"/>
+		</list>
+		<list key="ConfigurationWizardMainPage.STORE_HOSTNAME_ID">
+			<item value="localhost"/>
+		</list>
+	</section>
+</section>
